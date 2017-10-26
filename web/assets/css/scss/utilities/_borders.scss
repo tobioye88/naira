@@ -19,6 +19,21 @@
   border-color: $white !important;
 }
 
+@each $color, $value in $theme-colors{
+  .border-top-#{$color}{
+    border-top: 1px solid $value;
+  }
+  .border-right-#{$color}{
+    border-right: 1px solid $value;
+  }
+  .border-bottom-#{$color}{
+    border-bottom: 1px solid $value;
+  }
+  .border-left-#{$color}{
+    border-left: 1px solid $value;
+  }
+}
+
 //
 // Border-radius
 //
