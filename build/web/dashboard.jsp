@@ -12,12 +12,12 @@
         <div class="container my-3">
             <div class="row d-flex">
                 <div class="col-md-5 col-lg-3">
-                	<div class="bg-white mb-3 p-3 rounded"><h3 class="mb-0 text-secondary-dark">Services</h3>
+                	<div class="mb-3 p-3 rounded border border-primary"><h3 class="mb-0 text-secondary-dark">Services</h3>
                 		<div class="border border-primary w-25"></div>
                 	</div>
-                	<div id="accordion" role="tablist">
+                	<div id="accordion" role="tablist" class="border border-primary rounded">
                 		<div class="">
-                			<div class="bg-white p-3" role="tab" id="headingOne">
+                			<div class=" p-3" role="tab" id="headingOne">
                 				<h5 class="mb-0">
                 					<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 						Commercial Services
@@ -79,7 +79,7 @@
                 			</div>
                 		</div>
                 		<div class="">
-                			<div class="bg-white p-3" role="tab" id="headingTwo">
+                			<div class=" p-3" role="tab" id="headingTwo">
                 				<h5 class="mb-0">
                 					<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 						Banking Services
@@ -120,7 +120,7 @@
                 			</div>
                 		</div>
                 		<div class="">
-                			<div class="bg-white p-3" role="tab" id="headingThree">
+                			<div class=" p-3" role="tab" id="headingThree">
                 				<h5 class="mb-0">
                 					<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 						Operational Services
@@ -154,7 +154,7 @@
                 			</div>
                 		</div>
                 		<div class="">
-                			<div class="bg-white p-3" role="tab" id="headingThree">
+                			<div class=" p-3" role="tab" id="headingThree">
                 				<h5 class="mb-0">
                 					<a class="collapsed" data-toggle="collapse" href="#profileManagement" aria-expanded="false" aria-controls="profileManagement">
                 						Profile Management
@@ -224,116 +224,94 @@
                         id="home" 
                         role="tabpanel" 
                         aria-labelledby="home-tab">
-                        	<div class="p-3 bg-white mb-3 text-center rounded">
-	                            <h1 class="display-1 text-secondary-dark">Welcome</h1>
-	                            <div class="border-bottom-primary w-25 mb-3 mx-auto"></div>
-	                            <p class="text-muted">What will you like to do?</p>
-	                            <div class="border-bottom-primary w-25 mb-3 mx-auto"></div>
-                        	</div>
-                        	<div class="p-3 mt-3 text-center bg-white">
-                        		<p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        	</div>
-                            <!-- <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card border-light">
-                                        <div class="card-body">
-                                            <h3 class="display-4">Pay <br>Bills</h3>
-                                            <div class="text-right">
-                                                <button class="btn btn-primary"><i class="fa fa-send" aria-hidden="true"></i> Go</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border-light">
-                                        <div class="card-body">
-                                            <h3 class="display-4">Transfer <br>Funds</h3>
-                                            <div class="text-right">
-                                                <button class="btn btn-primary"><i class="fa fa-send" aria-hidden="true"></i> Go</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border-light">
-                                        <div class="card-body">
-                                            <h3 class="display-4">Airtime <br>Topup</h3>
-                                            <div class="text-right">
-                                                <button class="btn btn-primary"><i class="fa fa-send" aria-hidden="true"></i> Go</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+							<div class="row">
+	                        	<div class="col-md-12 col-lg-7">
+		                        	<div class="p-3  mb-3 text-center rounded">
+			                            <h1 class="display-1 text-secondary-dark">Welcome</h1>
+			                            <div class="border-bottom-primary w-25 mb-3 mx-auto"></div>
+			                            <p class="text-muted">What will you like to do?</p>
+			                            <div class="border-bottom-primary w-25 mb-3 mx-auto"></div>
+		                        	</div>
+		                        	<div class="p-3 mt-3 text-center">
+		                        		<p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		                        	</div>
+	                        	</div>
+	                        	<div class="col-lg-5 hidden-md-down">
+	                        		<img src="assets/imgs/naira_mobile.png" class="img-fluid">
+	                        	</div>
+                            </div>
                         </div>
                         <div 
-                          class="tab-pane fade bg-white rounded p-3" 
+                          class="tab-pane fade border border-primary rounded p-3" 
                           id="airtime" 
                           role="tabpanel" 
                           aria-labelledby="airtime-tab">
-                          <h2>Airtime Topup</h2>
+                          <h2 class="text-center">Airtime Topup</h2>
                           <jsp:include page="ins/airtime.jsp" />
                         </div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="bills" 
                       role="tabpanel" 
-                      aria-labelledby="bills-tab"><h2>Bills Payment</h2></div>
+                      aria-labelledby="bills-tab">
+	                      <h2 class="text-center">Bills Payment</h2>
+	                      <jsp:include page="ins/payBills.jsp" />
+                  		</div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="instant" 
                       role="tabpanel" 
-                      aria-labelledby="instant-tab"><h2>Instant Funds Transfer</h2></div>
+                      aria-labelledby="instant-tab"><h2 class="text-center">Instant Funds Transfer</h2></div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="funds" 
                       role="tabpanel" 
-                      aria-labelledby="funds-tab"><h2>Fund Naira Wallet</h2></div>
+                      aria-labelledby="funds-tab"><h2 class="text-center">Fund Naira Wallet</h2></div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="mailp" 
                       role="tabpanel" 
-                      aria-labelledby="mailp-tab"><h2>Pay Using Mail (Mail Pay)</h2></div>
+                      aria-labelledby="mailp-tab"><h2 class="text-center">Pay Using Mail (Mail Pay)</h2></div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="bulkp" 
                       role="tabpanel" 
-                      aria-labelledby="bulkp-tab"><h2>Bulk Payment Workflow</h2></div>
+                      aria-labelledby="bulkp-tab"><h2 class="text-center">Bulk Payment Workflow</h2></div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="singlev" 
                       role="tabpanel" 
-                      aria-labelledby="singlev-tab"><h2>Single View (of Accounts)</h2></div>
+                      aria-labelledby="singlev-tab"><h2 class="text-center">Single View (of Accounts)</h2></div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="payroll" 
                       role="tabpanel" 
-                      aria-labelledby="payroll-tab"><h2>Payroll package</h2></div>
+                      aria-labelledby="payroll-tab"><h2 class="text-center">Payroll package</h2></div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="switchpay" 
                       role="tabpanel" 
-                      aria-labelledby="switchpay-tab"><h2>SwitchPay Settlement Portal</h2></div>
+                      aria-labelledby="switchpay-tab"><h2 class="text-center">SwitchPay Settlement Portal</h2></div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="switchpaydrs" 
                       role="tabpanel" 
-                      aria-labelledby="switchpaydrs-tab"><h2>SwitchPay DRS</h2></div>
+                      aria-labelledby="switchpaydrs-tab"><h2 class="text-center">SwitchPay DRS</h2></div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="postpaidserv" 
                       role="tabpanel" 
-                      aria-labelledby="postpaidserv-tab"><h2>Postpaid Services</h2></div>
+                      aria-labelledby="postpaidserv-tab"><h2 class="text-center">Postpaid Services</h2></div>
                       <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="stdloan" 
                       role="tabpanel" 
-                      aria-labelledby="stdloan-tab"><h2>Student Loans</h2></div>
+                      aria-labelledby="stdloan-tab"><h2 class="text-center">Student Loans</h2></div>
                         <div 
-                      class="tab-pane fade bg-white rounded p-3" 
+                      class="tab-pane fade border border-primary rounded p-3" 
                       id="recurringpay" 
                       role="tabpanel" 
-                      aria-labelledby="recurringpay-tab"><h2>Recurring Payments</h2></div>
+                      aria-labelledby="recurringpay-tab"><h2 class="text-center">Recurring Payments</h2></div>
                     </div>
                 </div>
             </div>

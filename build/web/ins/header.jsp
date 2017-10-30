@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:900" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body class="bg-light">
+<body class="">
     <header class="fixed-top" style="background-color: rgba(255,255,255,0.0);">
         <div class="container">
             <div class="row">
@@ -24,7 +24,7 @@
                         <img src="assets/imgs/naira_logo.png" alt="Naira Logo" height="50px">
                         <a class="navbar-brand" href="/naira3">Naira.com</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,7 +36,7 @@
                                     <a class="nav-link" href="faqs.jsp">FAQs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/naira3/login.jsp">Login</a>
+                                    <a class="nav-link" href="#loginModal" data-toggle="modal" data-target="#loginModal">Login</a>
                                 </li>
                             </ul>
                         </div>
@@ -56,3 +56,32 @@ $(window).scroll(function(event) {
     }
 });
 </script>
+<!-- Login Modal -->
+<div id="loginModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-secondary display-4">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="app/login.jsp" method="POST">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" name="email" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="form-group m-0 text-center">
+                        <button type="submit" name="submit" placeholder="Email" class="btn btn-secondary btn-block mb-3"><i class="fa fa-unlock" aria-hidden="true"></i> Login</button>
+                        <a class="text-secondary" href="register.jsp">Register Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

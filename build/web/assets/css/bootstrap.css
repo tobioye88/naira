@@ -356,25 +356,105 @@ h6, .h6 {
   font-weight: 300; }
 
 .display-1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 300;
   line-height: 1.1; }
 
 .display-2 {
-  font-size: 5.5rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.1; }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.1; }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.1; }
 
+@media (min-width: 576px) {
+  .display-1 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-2 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-3 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-4 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.1; } }
+@media (min-width: 768px) {
+  .display-1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-3 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.1; } }
+@media (min-width: 992px) {
+  .display-1 {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-2 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-3 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-4 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1; } }
+@media (min-width: 1200px) {
+  .display-1 {
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-2 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+  .display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.1; } }
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -6663,5 +6743,43 @@ a.text-dark:focus, a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important; }
+
+.hidden-xs-up {
+  display: none !important; }
+
+@media (max-width: 575px) {
+  .hidden-xs-down {
+    display: none !important; } }
+
+@media (min-width: 576px) {
+  .hidden-sm-up {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important; } }
+
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important; } }
+
+@media (max-width: 991px) {
+  .hidden-md-down {
+    display: none !important; } }
+
+@media (min-width: 992px) {
+  .hidden-lg-up {
+    display: none !important; } }
+
+@media (max-width: 1199px) {
+  .hidden-lg-down {
+    display: none !important; } }
+
+@media (min-width: 1200px) {
+  .hidden-xl-up {
+    display: none !important; } }
+
+.hidden-xl-down {
+  display: none !important; }
 
 /*# sourceMappingURL=bootstrap.css.map */

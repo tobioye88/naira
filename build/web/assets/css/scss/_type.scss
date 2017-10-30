@@ -24,25 +24,52 @@ h6, .h6 { font-size: $h6-font-size; }
 }
 
 // Type display classes
-.display-1 {
-  font-size: $display1-size;
-  font-weight: $display1-weight;
-  line-height: $display-line-height;
-}
-.display-2 {
-  font-size: $display2-size;
-  font-weight: $display2-weight;
-  line-height: $display-line-height;
-}
-.display-3 {
-  font-size: $display3-size;
-  font-weight: $display3-weight;
-  line-height: $display-line-height;
-}
-.display-4 {
-  font-size: $display4-size;
-  font-weight: $display4-weight;
-  line-height: $display-line-height;
+// .display-1 {
+//   font-size: $display1-size;
+//   font-weight: $display1-weight;
+//   line-height: $display-line-height;
+// }
+// .display-2 {
+//   font-size: $display2-size;
+//   font-weight: $display2-weight;
+//   line-height: $display-line-height;
+// }
+// .display-3 {
+//   font-size: $display3-size;
+//   font-weight: $display3-weight;
+//   line-height: $display-line-height;
+// }
+// .display-4 {
+//   font-size: $display4-size;
+//   font-weight: $display4-weight;
+//   line-height: $display-line-height;
+// }
+
+@each $breakpoint in map-keys($grid-breakpoints){
+  @include media-breakpoint-up($breakpoint){
+
+
+    .display-1 {
+      font-size: map-get($display1, $breakpoint);
+      font-weight: $display-weight;
+      line-height: $display-line-height;
+    }
+    .display-2 {
+      font-size: map-get($display2, $breakpoint);
+      font-weight: $display-weight;
+      line-height: $display-line-height;
+    }
+    .display-3 {
+      font-size: map-get($display3, $breakpoint);
+      font-weight: $display-weight;
+      line-height: $display-line-height;
+    }
+    .display-4 {
+      font-size: map-get($display4, $breakpoint);
+      font-weight: $display-weight;
+      line-height: $display-line-height;
+    }
+  }
 }
 
 

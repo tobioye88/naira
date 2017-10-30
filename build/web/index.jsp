@@ -11,16 +11,16 @@
     	<div class="py-5"></div>
     	<div class="row">
     		<div class="col-12 d-flex">
-    			<div class="bg-dark py-3 px-2" style="width: 300px; min-width:300px; height: 550px; border-radius: 20px;margin-bottom: -120px">
+    			<div class="bg-dark py-3 px-2 hidden-md-down" style="width: 300px; min-width:300px; height: 550px; border-radius: 20px;margin-bottom: -120px">
     				<div class="bg-light p-1 w-25 mx-auto" style="border-radius: 5px; margin-bottom: 5px;"></div>
-                    <div class="bg-white w-100" style="border-radius: 20px; height: calc(100% - 20px);"></div>
+                    <div class="bg-white w-100" style="border-radius: 20px; height: calc(100% - 20px); background-image: url(assets/imgs/naira_mobile.png); background-size: 100%"></div>
     			</div>
-    			<div class="w-auto pl-5 p-3 align-self-center">
+    			<div class="w-auto pl-lg-5 p-lg-3 align-self-center">
 	    			<h2 class="display-3 text-white text-shadow font2">Use <span class="text-secondary-light">naira.com</span><br>enjoy unbeatable services</h2>
 	    			<div class="border border-primary mb-3 w-25"></div>
-	    			<a href="payBills.jsp" class="btn btn-lg btn-outline-light">Pay Bills</a>
-	    			<a href="airtimePurchase.jsp" class="btn btn-lg btn-outline-light">Purchase Airtime</a>
-	    			<a href="fundTransfer.jsp" class="btn btn-lg btn-secondary">Transfer Funds</a>
+	    			<a href="payBills.jsp" class="mb-2 btn btn-lg btn-outline-light">Pay Bills</a>
+	    			<a href="airtimePurchase.jsp" class="mb-2 btn btn-lg btn-outline-light">Purchase Airtime</a>
+	    			<a href="fundTransfer.jsp" class="mb-2 btn btn-lg btn-secondary">Transfer Funds</a>
 	    		</div>
     		</div>
     	</div>
