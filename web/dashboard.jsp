@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <jsp:include page="ins/header.jsp" />
-
+<script src="assets/js/validate.min.js"></script>
 <section class="py-5"></section>
  <section>
         <div class="container my-3">
@@ -18,11 +18,11 @@
                 	<div id="accordion" role="tablist" class="border border-primary rounded">
                 		<div class="">
                 			<div class=" p-3" role="tab" id="headingOne">
-                				<h5 class="mb-0">
+                				<p class="mb-0 font-weight-bold">
                 					<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 						Commercial Services
                 					</a>
-                				</h5>
+                				</p>
                 			</div>
 
                 			<div id="collapseOne" class="collapse show bg-grey100" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
@@ -59,14 +59,14 @@
                             role="tab" 
                             aria-controls="mailp" 
                             aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> pay using mail (mail pay)</a>
-                					<a
+<!--                					<a
         					class="nav-link" 
                             id="ppservice-tab" 
                             data-toggle="pill" 
                             href="#ppservice" 
                             role="tab" 
                             aria-controls="ppservice" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> enjoy postpaid services</a>
+                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> enjoy postpaid services</a>-->
                 					<a 
         					class="nav-link"
                             id="esloans-tab" 
@@ -80,11 +80,11 @@
                 		</div>
                 		<div class="">
                 			<div class=" p-3" role="tab" id="headingTwo">
-                				<h5 class="mb-0">
+                				<p class="mb-0 font-weight-bold">
                 					<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 						Banking Services
                 					</a>
-                				</h5>
+                				</p>
                 			</div>
                 			<div id="collapseTwo" class="collapse bg-grey100" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                 				<div class="nav flex-column">
@@ -110,22 +110,22 @@
                             aria-controls="vbaccounts" 
                             aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> view all my bank accounts</a>
                 					<a class="nav-link"
-                            id="srpayment-tab" 
+                            id="recurringpay-tab" 
                             data-toggle="pill" 
-                            href="#srpayment" 
+                            href="#recurringpay" 
                             role="tab" 
-                            aria-controls="srpayment" 
+                            aria-controls="recurringpay" 
                             aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> set up recurring payments</a>
                 				</div>
                 			</div>
                 		</div>
                 		<div class="">
                 			<div class=" p-3" role="tab" id="headingThree">
-                				<h5 class="mb-0">
+                				<p class="mb-0 font-weight-bold">
                 					<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 						Operational Services
                 					</a>
-                				</h5>
+                				</p>
                 			</div>
                 			<div id="collapseThree" class="collapse bg-grey100" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                 				<div class="nav flex-column">
@@ -135,83 +135,55 @@
                             href="#ssportal" 
                             role="tab" 
                             aria-controls="ssportal" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> SwitchPay Settlement Portal</a>
+                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> switchpay Settlement Portal</a>
                 					<a class="nav-link"
                             id="sdrs-tab" 
                             data-toggle="pill" 
                             href="#sdrs" 
                             role="tab" 
                             aria-controls="sdrs" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> SwitchPay DRS</a>
+                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> switchpay DRS</a>
                 					<a class="nav-link"
                             id="ppackage-tab" 
                             data-toggle="pill" 
                             href="#ppackage" 
                             role="tab" 
                             aria-controls="ppackage" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> Payroll Package</a>
+                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> payroll Package</a>
                 				</div>
                 			</div>
                 		</div>
                 		<div class="">
-                			<div class=" p-3" role="tab" id="headingThree">
-                				<h5 class="mb-0">
-                					<a class="collapsed" data-toggle="collapse" href="#profileManagement" aria-expanded="false" aria-controls="profileManagement">
-                						Profile Management
+                			<div class=" p-3" role="tab" id="headingTwo">
+                				<p class="mb-0 font-weight-bold">
+                					<a class="collapsed" data-toggle="collapse" href="#adminServices" aria-expanded="false" aria-controls="adminServices">
+                						Admin Services
                 					</a>
-                				</h5>
+                				</p>
                 			</div>
-                			<div id="profileManagement" class="collapse bg-grey100" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                				<div class="nav flex-column" role="tablist">
+                			<div id="adminServices" class="collapse bg-grey100" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                				<div class="nav flex-column">
                 					<a class="nav-link"
-                            id="rnearn-tab" 
+                            id="manageuser-tab" 
                             data-toggle="pill" 
-                            href="#rnearn" 
+                            href="#manageuser" 
                             role="tab" 
-                            aria-controls="rnearn" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> refer and earn</a>
+                            aria-controls="manageuser" 
+                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> manage users</a>
                 					<a class="nav-link"
-                            id="nwallet-tab" 
+                            id="vu-actv-tab" 
                             data-toggle="pill" 
-                            href="#nwallet" 
+                            href="#vu-actv" 
                             role="tab" 
-                            aria-controls="nwallet" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> naira wallet</a>
+                            aria-controls="vu-actv" 
+                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> view user activities</a>
                 					<a class="nav-link"
-                            id="cpassword-tab" 
+                            id="vatousers-tab" 
                             data-toggle="pill" 
-                            href="#cpassword" 
+                            href="#vatousers" 
                             role="tab" 
-                            aria-controls="cpassword" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> change password</a>
-                					<a class="nav-link"
-                            id="pwallet-tab" 
-                            data-toggle="pill" 
-                            href="#pwallet" 
-                            role="tab" 
-                            aria-controls="pwallet" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> promo wallet</a>
-                					<a class="nav-link"
-                            id="ainformation-tab" 
-                            data-toggle="pill" 
-                            href="#ainformation" 
-                            role="tab" 
-                            aria-controls="ainformation" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> account information</a>
-                					<a class="nav-link"
-                            id="ftbenf-tab" 
-                            data-toggle="pill" 
-                            href="#ftbenf" 
-                            role="tab" 
-                            aria-controls="ftbenf" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> fund transfer beneficiaries</a>
-                					<a class="nav-link"
-                            id="merchants-tab" 
-                            data-toggle="pill" 
-                            href="#merchants" 
-                            role="tab" 
-                            aria-controls="merchants" 
-                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> merchants</a>
+                            aria-controls="vatousers" 
+                            aria-expanded="true"><i class="fa fa-image" aria-hidden="true"></i> view audit trail of users</a>
                 				</div>
                 			</div>
                 		</div>
@@ -231,9 +203,6 @@
 			                            <div class="border-bottom-primary w-25 mb-3 mx-auto"></div>
 			                            <p class="text-muted">What will you like to do?</p>
 			                            <div class="border-bottom-primary w-25 mb-3 mx-auto"></div>
-		                        	</div>
-		                        	<div class="p-3 mt-3 text-center">
-		                        		<p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		                        	</div>
 	                        	</div>
 	                        	<div class="col-lg-5 hidden-md-down">
@@ -259,19 +228,41 @@
                   		</div>
                       <div 
                       class="tab-pane fade border border-primary rounded p-3" 
-                      id="instant" 
+                      id="tfinstantly" 
                       role="tabpanel" 
-                      aria-labelledby="instant-tab"><h2 class="text-center">Instant Funds Transfer</h2></div>
+                      aria-labelledby="instant-tab"><h2 class="text-center">Instant Funds Transfer</h2>
+                          <jsp:include page="services_banking/fundTransfer.jsp" />
+
+                      </div>
                       <div 
                       class="tab-pane fade border border-primary rounded p-3" 
                       id="funds" 
                       role="tabpanel" 
-                      aria-labelledby="funds-tab"><h2 class="text-center">Fund Naira Wallet</h2></div>
+                      aria-labelledby="funds-tab"><h2 class="text-center">Fund Naira Wallet</h2>
+                           <jsp:include page="services_commercial/fundNairaWallet.jsp" />
+                      </div>
                       <div 
                       class="tab-pane fade border border-primary rounded p-3" 
                       id="mailp" 
                       role="tabpanel" 
-                      aria-labelledby="mailp-tab"><h2 class="text-center">Pay Using Mail (Mail Pay)</h2></div>
+                      aria-labelledby="mailp-tab"><h2 class="text-center">Pay Using Mail (Mail Pay)</h2>
+                          <jsp:include page="services_commercial/mailpay.jsp" />
+                      </div>
+                      <div 
+                          class="tab-pane fade border border-primary rounded p-3" 
+                          id="pmbenf" 
+                          role="tabpanel" 
+                          aria-labelledby="pmbenf-tab"><h2 class="text-center">Pay Many Beneficiaries</h2>
+                          <jsp:include page="services_banking/pay_many_beneficiaries.jsp" />
+                      </div>
+                      <div 
+                          class="tab-pane fade border border-primary rounded p-3" 
+                          id="recurringpay" 
+                          role="tabpanel" 
+                          aria-labelledby="recurringpay-tab"><h2 class="text-center">Recurring Payments</h2>
+                          <jsp:include page="services_banking/recurring_payments.jsp" />
+                      </div>
+                        
                       <div 
                       class="tab-pane fade border border-primary rounded p-3" 
                       id="bulkp" 
@@ -279,9 +270,11 @@
                       aria-labelledby="bulkp-tab"><h2 class="text-center">Bulk Payment Workflow</h2></div>
                       <div 
                       class="tab-pane fade border border-primary rounded p-3" 
-                      id="singlev" 
+                      id="vbaccounts" 
                       role="tabpanel" 
-                      aria-labelledby="singlev-tab"><h2 class="text-center">Single View (of Accounts)</h2></div>
+                      aria-labelledby="vbaccounts-tab"><h2 class="text-center">View My accounts</h2>
+                      <jsp:include page="services_banking/view_all_my_accounts.jsp" />
+                  	  </div>
                       <div 
                       class="tab-pane fade border border-primary rounded p-3" 
                       id="payroll" 
@@ -307,12 +300,11 @@
                       id="stdloan" 
                       role="tabpanel" 
                       aria-labelledby="stdloan-tab"><h2 class="text-center">Student Loans</h2></div>
-                        <div 
+                      <div 
                       class="tab-pane fade border border-primary rounded p-3" 
-                      id="recurringpay" 
+                      id="refer_earn" 
                       role="tabpanel" 
-                      aria-labelledby="recurringpay-tab"><h2 class="text-center">Recurring Payments</h2></div>
-                    </div>
+                      aria-labelledby="stdloan-tab"><h2 class="text-center">Refer and Earn</h2></div>   
                 </div>
             </div>
         </div>
